@@ -10,12 +10,12 @@
 name: Create and publish a Docker image
 
 on:
-  release:
-    types: [published] 
+  push:
+    branches: ['release']
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: lab5ssgs:latest
+  IMAGE_NAME: ${{ github.repository }}
 
 jobs:
   build-and-push-image:
