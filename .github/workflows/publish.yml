@@ -15,7 +15,7 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: lab5ssgs
+  IMAGE_NAME: lab5ssgs:latest
 
 jobs:
   build-and-push-image:
